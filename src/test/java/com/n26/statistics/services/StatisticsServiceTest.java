@@ -6,8 +6,6 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import java.time.Instant;
-import java.util.ArrayList;
-import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -19,12 +17,11 @@ import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 
-import com.n26.statistics.model.Statistics;
 import com.n26.statistics.model.Transaction;
 import com.n26.statistics.repositories.TransactionRepository;
 
 @RunWith(MockitoJUnitRunner.class)
-//@SpringBootTest(webEnvironment = WebEnvironment.NONE)
+@SpringBootTest(webEnvironment = WebEnvironment.NONE)
 public class StatisticsServiceTest {
 	
 	@InjectMocks
